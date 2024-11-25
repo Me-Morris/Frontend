@@ -1,4 +1,4 @@
-const baseURL = 'http://54.211.4.168:8000'; // Cambia esto si es necesario
+const baseURL = 'http://172.31.92.51:8000'; // Cambia esto si es necesario
 
 // Registrar nuevo Tenant
 document.getElementById('registerForm').addEventListener('submit', async (e) => {
@@ -64,7 +64,7 @@ function login(){
   const username = document.getElementById('loginUserName').value;
   const password = document.getElementById('loginPassword').value
 
-  fetch('http://54.211.4.168:8000/login', {
+  fetch('http://172.31.92.51:8000/login', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -105,7 +105,7 @@ function register(){
   const paymentMethodId = document.getElementById('paymentMethodId').value
   const name = document.getElementById('name').value
 
-  fetch('http://54.211.4.168:8000/tenants', {
+  fetch('http://172.31.92.51:8000/tenants', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
